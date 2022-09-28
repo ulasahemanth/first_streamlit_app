@@ -46,9 +46,9 @@ streamlit.stop()
 streamlit.header("Fruityvice Fruit Advice!")
 #SF function
 def get_fruit_load_list():
-  with my_cnx.cursor() as my_cur
-  my_cur.execute("SELECT * from fruit_load_list")
-  return my_cur.fetchall()
+  with my_cnx.cursor() as my_cur:
+    my_cur.execute("SELECT * from fruit_load_list")
+    return my_cur.fetchall()
 
 #add a buton 
 if streamlit.button('get Fruit load list'):
