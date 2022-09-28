@@ -42,7 +42,7 @@ try:
 
 except URLError as e:
   streamlit.error()
-streamlit.stop()
+
 streamlit.header("Fruityvice Fruit Advice!")
 #SF function
 def get_fruit_load_list():
